@@ -73,11 +73,11 @@ async function init() {
     });
 
     document.getElementById("kazaks").addEventListener("click", async function () {
-        await searchKazakhstanCities();
+        await KazakhstanCities();
     });
 
     document.getElementById("world").addEventListener("click", async function () {
-        await searchWorldCities();
+        await WorldCities();
     });
 }
 
@@ -90,17 +90,17 @@ async function searchData() {
     await fetchWeather(cityName, "results");
 }
 
-async function searchKazakhstanCities() {
+async function KazakhstanCities() {
     let kazakhstanCities = ["Almaty", "Astana", "Shymkent", "Karaganda", "Aktobe"];
-    await displayWeatherForCities(kazakhstanCities, "kazaks");
+    await Weathers(kazakhstanCities, "kazaks");
 }
 
-async function searchWorldCities() {
+async function WorldCities() {
     let worldCities = ["New York", "London", "Tokyo", "Paris", "Berlin"];
-    await displayWeatherForCities(worldCities, "world");
+    await Weathers(worldCities, "world");
 }
 
-async function displayWeatherForCities(cities, containerId) {
+async function Weathers(cities, containerId) {
     let container = document.getElementById(containerId);
     container.innerHTML = "";
 
