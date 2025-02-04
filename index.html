@@ -13,40 +13,16 @@
 
         <input type="text" id="searchInput" placeholder="Іздеу...">
         
-        <button onclick="searchData()">Іздеу</button>
+        <button id="results" >Іздеу</button>
+        <button id="kazaks" >Қазақстан қалалары</button>
+        <button id="world" >Әлем бойынша </button>
        
     </div>
-    
-    <div id="results" class="results-container">
-      
-        <div class="card">
-           
-            <h3>Almaty, KZ</h3><br>
-            
-                <p>🌡Temperature: -6 °C</p><br>
-                <p>Weather: Sunny and light winds</p>
-            
-              </div>
-              <div class="card"> 
-           
-                <h3>Astana, KZ</h3><br>
-                    <p>🌡Temperature: -21 °C</p><br>
-                    <p>Weather: Drizzle appears to float while following air currents.</p>
-                
-                   </div> 
-                   <div class="card"> 
-           
-                    <h3>Aqtau, KZ</h3><br>
-                        <p>🌡Temperature: +3 °C</p><br>
-                        <p>Weather:which are round or irregular hard grains of ice consisting of frozen raindrops or largely melted then refrozen snowflakes</p><br>
-                    
-                      </div>
-            </div>
-        
-      
-                
-        
-   
+
+    <div id="kazaks" class="kazaks-container"></div>
+
+    <div id="world" class="world-container"></div>
+    <div id="results" class="results-container"></div>
     <script src="index.js"></script>
 </body>
 </html>
