@@ -5,8 +5,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 40vh;
-    margin: 0;
+   
+    /* height: 40vh; */
+    margin: 80px;
 }
 
  .search-container {
@@ -47,6 +48,10 @@ button {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    margin-top: 150px;
+    background-color: #fff;
+    border-radius: 30px;
+    width: 400px;
     
 }
 
